@@ -1,13 +1,11 @@
+import './reference.scss'
 import React from 'react'
-import styled from 'styled-components'
 
-const Container = styled.div`
-  background-color: lightsalmon;
-`
-function Refrences() {
+
+function Reference() {
   return (
-    <div className='reference'>Reference</div>
+      <div className='reference' id='reference'>Reference</div>
   )
 }
 
-export default Refrences
+export default Reference
