@@ -1,5 +1,6 @@
 import React from 'react'
 import "./menu.scss"
+import {Link} from 'react-router-dom'
 
 function Menu({menuOpen, setMenuOpen}) {
   return (
@@ -18,7 +19,7 @@ function Menu({menuOpen, setMenuOpen}) {
                 <a href="#reference">References</a>
             </li>
             <li onClick={() => setMenuOpen(false)}>
-                <a href="#contact">Contact</a>
+                <Link to='/contact'>Contact</Link>
             </li>
         </ul>
     </div>
