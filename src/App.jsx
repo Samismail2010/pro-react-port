@@ -4,7 +4,7 @@ import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
 import Menu from "./components/menu/Menu";
-import Reference from "./components/reference/Reference";
+import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import './app.scss'
 
@@ -16,10 +16,6 @@ function App() {
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
           <div className="sections">
           <Intro />
-          <Portfolio />
-          <Works />
-          <Reference />
-          <Contact />
         </div>
        
     </div>

@@ -2,6 +2,7 @@ import './intro.scss'
 import { useEffect, useRef } from 'react'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import {init} from 'ityped';
+import { GitHub, LinkedIn } from '@material-ui/icons';
 
 function Intro() {
 
@@ -27,10 +28,18 @@ function Intro() {
             <h2>Hello, I'm</h2>
             <h1>Sam Ismail</h1>
             <h3><span ref={textRef}></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officia iusto nostrum repellat laudantium possimus. 
+              Exercitationem minima nihil error deserunt obcaecati ex nobis adipisci, quod quisquam doloribus aspernatur quia pariatur.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officia iusto nostrum repellat laudantium possimus. 
+              Exercitationem minima nihil error deserunt obcaecati ex nobis adipisci, quod quisquam doloribus aspernatur quia pariatur.</p>
+           <div className="icons">
+             <LinkedIn className='icon' onMouseOver={({target})=>target.style.color="navy"} 
+             onMouseOut={({target})=>target.style.color="gray"} />
+             <GitHub className='icon' onMouseOver={({target})=>target.style.color="indigo"}
+             onMouseOut={({target})=>target.style.color="gray"} />
+          </div> 
+          
           </div>
-          <a href="#portfolio">
-            <ExpandMoreIcon className='arrIcon' />
-          </a>
         </div>
         
       </div>
