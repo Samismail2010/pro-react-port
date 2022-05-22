@@ -32,7 +32,8 @@ function Contact() {
   }, (error) => {
       console.log(error.text);
   });
-  };
+  handleSubmit();
+  }
 
   function handleChange(e){
     setFormState({...formState, [e.target.name]: e.target.value})
@@ -55,10 +56,14 @@ function Contact() {
       setFormState({...formState, [e.target.name]: e.target.value});
     }
   }
+
   function handleSubmit(e){
     e.preventDefault();
     console.log(formState);
+    
   }
+
+
 
   return(
     <div className="c">
@@ -92,22 +97,22 @@ function Contact() {
           <p className="c-desc">
            <b>Wanna Connect?</b> Please do not hesistate to reach out.
            </p>
-           <form ref={form} onSubmit={() =>{sendEmail(); handleSubmit()}}>
+           <form ref={form} onSubmit={sendEmail}>
              <div>
-            <label htmlFor="name"></label>
-             <input type="text" placeholder='Name' name='name' defaultValue={name} onBlur={handleChange}/>
+               <label className='form-label' htmlFor="name"></label>
+               <input type="text" placeholder='Name' name='name' defaultValue={name} onBlur={handleChange}/>
              </div>
              <div>
-            <label htmlFor="subject"></label>
-             <input type="text" placeholder='Subject' name='user_subject'/>
+              <input type="subject" placeholder='Subject' name='user_subject'/>
              </div>
              <div>
-               <label htmlFor="email"></label>
-             <input type="email" placeholder='Email' name='email' defaultValue={email} onBlur={handleChange}/>
+               <label className='form-label' htmlFor="email"></label>
+              <input type="email" placeholder='Email' name='email' defaultValue={email} onBlur={handleChange}/>
              </div>
+             
              <div>
-               <label htmlFor="message"></label>
-             <textarea rows='5' placeholder='Message' name='message' defaultValue={message} onBlur={handleChange}/>
+               <label className='form-label' htmlFor="message"></label>
+               <textarea rows='5' placeholder='Message' name='message' defaultValue={message} onBlur={handleChange}/>
              </div>
              {errorMessage && (
                <div>
