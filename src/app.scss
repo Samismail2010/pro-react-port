@@ -21,3 +21,46 @@
         }
     }
 }
+.sameHeight {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    border: none;
+  }
+  .wrap-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: none;
+  }
+  .avatarImg img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 400px;
+    border: none;
+  }
+  .social i {
+    padding: 2px;
+    color: rgb(68,68,68);
+    border: none;
+  }
+  .mt {
+    margin-top: 20px;
+    border: none;
+  }
+  .pt {
+    padding-top: 10px;
+    border: none;
+  }
+  h5 {
+    font-size: 30px;
+    padding-bottom: 50px;
+    border: none;
+  }
+  h6 span {
+    float: right;
+    font-size: 14px;
+    border: none;
+  }

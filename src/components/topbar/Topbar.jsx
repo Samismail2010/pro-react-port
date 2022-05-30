@@ -7,10 +7,10 @@ function Topbar({menuOpen, setMenuOpen}) {
       <div className={'topbar ' + (menuOpen && "active")}>
           <div className="wrapper">
               <div className="left">
-                  <a href="#intro" className='logo'>genius</a>
+                  <a href="#intro" className='logo'>Welcome</a>
                   <div className="itemContainer">
                       <Person className='icon'/>
-                      <span>4695318378</span>
+                      <span>469-531-8378</span>
                   </div>
                   <div className="itemContainer">
                       <Mail className='icon'/>

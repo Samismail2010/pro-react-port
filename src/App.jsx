@@ -1,14 +1,16 @@
 import {useState} from "react";
+import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/js/materialize.min.js';
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import Portfolio from "./components/portfolio/Portfolio";
-import Works from "./components/works/Works";
 import Menu from "./components/menu/Menu";
-import Resume from "./components/resume/Resume";
 import Contact from "./components/contact/Contact";
 import './app.scss'
 
+
 function App() {
+  
   const[menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
@@ -16,6 +18,7 @@ function App() {
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
           <div className="sections">
           <Intro />
+          <Portfolio />
         </div>
        
     </div>

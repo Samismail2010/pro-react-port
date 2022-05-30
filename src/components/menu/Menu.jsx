@@ -7,13 +7,10 @@ function Menu({menuOpen, setMenuOpen}) {
     <div className={'menu '+ (menuOpen && "active")}>
         <ul>
             <li onClick={() => setMenuOpen(false)}>
-                <a href="#intro">Home</a>
+                <a href="/">Home</a>
             </li>
             <li onClick={() => setMenuOpen(false)}>
                 <a href="#portfolio">Portfolio</a>
-            </li>
-            <li onClick={() => setMenuOpen(false)}>
-                <a href="#work">Projects</a>
             </li>
             <li onClick={() => setMenuOpen(false)}>
                 <Link to='/resume'>Resume</Link>

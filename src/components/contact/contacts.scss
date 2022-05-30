@@ -1,78 +1,94 @@
-.c{
-    height: 100vh;
+h2{
+
     position: relative;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
 }
-.c-bg{
-    width: 20px;
+// .c-bg{
+//     width: 20px;
+//     height: 100vh;
+//     background-color: rgb(90, 168, 90);
+//     position: absolute;
+// }
+// .c-wrapper{
+//     padding: 50px;
+//     display: flex;
+// }
+// .c-left{
+//     flex:1;
+// }
+// .c-right{
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+    
+// }
+// .homeicon{
+//     margin-top: -5px;
+//     margin-bottom: 20px;
+//     text-decoration: none;
+// }
+// .c-title{
+//     font-size: 60px;
+//     width: 80%;
+//     scroll-behavior: none;
+// }
+// .c-info-item{
+//     display: flex;
+//     align-items: center;
+//     margin: 50px 0px;
+//     font-weight: 500;
+//     width: 70%;
+// }
+
+// .c-icon{
+//     width: 30px;
+//     height: 30px;
+//     margin-right: 20px;
+// }
+// .c-desc{
+//     font-weight: 200;
+// }
+form{
+
     height: 100%;
-    background-color: rgb(90, 168, 90);
-    position: absolute;
-}
-.c-wrapper{
-    padding: 50px;
-    display: flex;
-}
-.c-left{
-    flex:1;
-}
-.c-right{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    border: none;
+    width: 600px;
     align-items: center;
     justify-content: center;
-}
-.homeicon{
-    margin-top: -5px;
-    margin-bottom: 20px;
-    text-decoration: none;
-}
-.c-title{
-    font-size: 60px;
-    width: 80%;
-    scroll-behavior: none;
-}
-.c-info-item{
-    display: flex;
-    align-items: center;
-    margin: 50px 0px;
-    font-weight: 500;
-    width: 70%;
-}
-
-.c-icon{
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
-.c-desc{
-    font-weight: 200;
-}
-form{
-    margin-top: 25px;
-    border: none;
+    margin-left: 310px;
 }
 
 input{
-    width: 400px;
+    width: 100%;
     height: 50px;
     border: none;
-    border-bottom: 1px solid black;
     margin: 20px 2px;
     font-size: 14px;
     padding-left: 10px;
 }
 textarea{
-    width: 100%;
-    margin: 10px 0px;
+    width: 30px;
+    height: 150px;
+    margin: 15px 0px;
     font-size: 14px;
     padding-left: 10px;
 }
 button{
     border: none;
     padding: 10px;
-    background-color: rgb(90, 168, 90);
+    background-color: lightseagreen;
     color: white;
     font-weight: 300;
     cursor: pointer;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.error-text{
+    color: red
 }
