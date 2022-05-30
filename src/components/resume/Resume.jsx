@@ -17,14 +17,14 @@ function Resume() {
            <div className='top-section'>
                <img src="assets/pro.JPG" alt="" className='profile'/>
                <p className='p1'>Sam <span>Ismail</span></p>
-               <p className='p2'>UI/UX designer</p>
+               <p className='p2'>Full Stack Developer</p>
            </div>
            <div className='clearfix'></div>
            <div className='col-div-4'>
                <div className="content-box" style={{paddingLeft: '20px'}} >
                    <p className='head'>Contact</p>
                    <p className='p3'><i><Phone/> </i>&nbsp;&nbsp;
-                   4695318378</p>
+                   (469) 531-8378</p>
                    <p className='p3'><i><Mail/> </i>&nbsp;&nbsp;
                    samismail2010@gmail.com</p>
                    <p className='p3'><i><PinDrop/> </i>&nbsp;&nbsp;
